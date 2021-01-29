@@ -6,3 +6,6 @@ migrate:
 
 createsuperuser:
 	docker-compose run --rm web python3 manage.py createsuperuser
+
+startproject:
+	docker-compose run --rm web django-admin startproject ${NAME} .
